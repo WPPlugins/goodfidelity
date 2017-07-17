@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*De página Goodfidelity*/
+div#bodypage {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+div#bodypage a{
+	color:#000;
+	text-decoration:none;
+}
+div#bodypage a:hover{
+	text-decoration:underline;
+}
+
+div#searchtitle1{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	background:#FFF;
+}
+div#barrapage{
+	width:100%;
+	float:left;
+}
+div#botonface{
+	background: url("/wp-content/plugins/goodfidelity/images/face-black-white.png");
+	height:32px;
+	width:32px;
+	float:left;
+	margin:20px 10px 20px 0px;
+}
+div#botonplay1{
+	background: url("/wp-content/plugins/goodfidelity/images/play-med.png");
+	height:32px;
+	width:32px;
+	float:left;
+}	
+div#maslistmas1{
+	background: url("/wp-content/plugins/goodfidelity/images/mas-black.png");
+	height:32px;
+	width:32px;
+	float:left;
+	margin:20px 10px 20px 0px;
+}	
+div#imageprincipal1{
+	width:100%;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	height:auto;
+}
+div#imageprincipal1 img{
+	margin:-60px 0px -65px 0px;
+}
+div#descprincipal1{
+	position:absolute;
+	bottom:0px;
+	left:5px;
+}
+div#descprincipal1 a{
+	font-size:8px !important;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+}
+/*Para pagina de playlist*/
+div#envuelvetodo{
+	float:left;
+	width:100%;
+}
+div#playallyou{
+	float:left;
+	height:28px;
+	color:#FFF;
+	background:#000;
+	padding:4px 10px 0px 0px;
+}
+div#botonejecall{
+	float:left;
+	margin:20px 10px 20px 0px;
+}
+/*PLAY YOU*/
+div#playou{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-position: center center;  
+  	background-image:url("/wp-content/plugins/goodfidelity/images/playou_opt.png");
+	background-repeat: no-repeat;
+	background-size: 15% 18%;
+	top:0px;
+	left:0px;	
+}
+div#playou:hover{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-position: center center;  
+  	background-image:url("/wp-content/plugins/goodfidelity/images/playou1_opt.png");
+	background-repeat: no-repeat;
+	background-size: 15% 18%;
+	top:0px;
+	left:0px;
+	cursor:pointer;
+}
+
+@media only screen and (max-width:480px) {
+div#imageprincipal1 img{
+	margin: 0px 0px 0px 0px;
+}
+div#playou, div#playou hover{	
+	background-size: 15% 15%;
+}
+div#descprincipal1{
+	top:5px;
+}
+}

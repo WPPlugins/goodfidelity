@@ -1,0 +1,672 @@
+@charset "utf-8";
+/* CSS Document */
+
+img {
+    border:none;
+}
+:focus {
+outline: 0;
+}
+div#barfooter{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:49px;
+	border-top:1px solid #000;
+	z-index:111000;
+	background:#333;
+	background-image: -ms-linear-gradient(top, #222, #333);     /* IE10 */
+ 	background-image:-moz-linear-gradient(top, #222, #333);     /* Mozilla */
+ 	/* for Safari, Chrome */
+ 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(1, #333));
+ 	background-image: -o-linear-gradient(top, #222, #333);          /* Opera 11.1+ */
+ 	background: linear-gradient(top, #222, #333);          /* W3C Markup */  
+}
+div#entrar{
+	float:left;
+	margin-top:0px;
+	margin-left:1px;
+	border-right:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/entrar.png");
+	cursor:pointer;
+	display:none;
+}
+div#salir{
+	float:left;
+	margin-top:0px;
+	margin-left:1px;
+	border-right:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/salir.png");
+	cursor:pointer;
+}
+div#playtodo{
+	position:absolute;
+	top:-49px;
+	left:51px;
+	border-right:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/play.png");
+	cursor:pointer;
+}
+div#cerrarplayfooter{
+	position:absolute;
+	top:-48px;
+	left:100px;
+	border-right:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/close-f90.png");
+	cursor:pointer;
+}
+div#lista{
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/lista.png");
+	cursor:pointer;
+}
+div#arriba{
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/arriba.png");
+	cursor:pointer;
+}
+div#abajo{
+	display:none;
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/abajo.png");
+	cursor:pointer;
+}
+div#buscar{
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/buscar.png");
+	cursor:pointer;
+}
+div#sharetwitter{
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/share_twitter.png");
+	cursor:pointer;
+}
+div#sharegoogle{
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/share_google.png");
+	cursor:pointer;
+}
+div#shareface{
+	float:right;
+	margin-top:0px;
+	margin-left:1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/share_face.png");
+	cursor:pointer;
+}
+div#listfooter{
+	position:absolute;
+	bottom:-120px;
+	left:0px;
+	width:100%;
+	height:120px;
+	z-index:11000;
+	background:#000;
+}
+div#playlist{
+	position:absolute;
+	display:none;
+	bottom:50px;
+	right:0px;
+	width:321px;
+	height:240px;
+	z-index:111000;
+	background:#000;
+}
+div#listheader{
+	float:left;
+	width:319px;
+	height:48px;
+	border: 1px solid #000;
+	z-index:111000;
+	background:#333;
+	background-image: -ms-linear-gradient(top, #222, #333);     /* IE10 */
+ 	background-image:-moz-linear-gradient(top, #222, #333);     /* Mozilla */
+ 	/* for Safari, Chrome */
+ 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(1, #333));
+ 	background-image: -o-linear-gradient(top, #222, #333);          /* Opera 11.1+ */
+ 	background: linear-gradient(top, #222, #333);          /* W3C Markup */  
+}
+div#headplay{
+	float:left;
+	width:200px;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	padding: 13px 0px 0px 5px;
+}
+div#cerrar{
+	float:right;
+	margin-top:0px;
+	margin-right:-1px;
+	border-left:1px solid #000;
+	width:48px;
+	height:48px;
+	background:url("../images/cerrar.png");
+	cursor:pointer;
+}
+div#listausu{
+	float:left;
+	margin-left:1px;
+	width:319px;
+	height:190px;
+	background:#FFF;
+}
+div#barsearch{
+	display:none;
+	position:fixed;
+	top:0px;
+	right:0px;
+	width:320px;
+	height:49px;
+	border-bottom:1px solid #000;
+	border-left: 1px solid #000;
+	z-index:111000;
+	background:#333;
+	background-image: -ms-linear-gradient(top, #222, #333);     /* IE10 */
+ 	background-image:-moz-linear-gradient(top, #222, #333);     /* Mozilla */
+ 	/* for Safari, Chrome */
+ 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(1, #333));
+ 	background-image: -o-linear-gradient(top, #222, #333);          /* Opera 11.1+ */
+ 	background: linear-gradient(top, #222, #333);          /* W3C Markup */  
+}
+div#cerrarsearch{
+	float:right;
+	margin-top:1px;
+	width:48px;
+	height:48px;
+	background:url("../images/cerrar.png");
+	cursor:pointer;
+}
+div#televisor{
+	position:absolute;
+	left:-320px;
+	bottom:50px;
+	width:320px;
+	height:240px;
+	z-index:112000;
+	background:#000;
+}
+/*formulario de búsqueda*/
+form#searchsong{
+	background: #000;
+	width:272px;
+	height: 50px;
+	margin-top:0px;
+	float:right;
+	position:relative;
+}
+
+#searchsong input.textsearch {
+	background: transparent;
+	border: none;
+	width:210px;
+	color:#FFF;
+	position:absolute;
+	top:8px;
+	left:10px;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#searchsong input.buttonsearch {
+    width: 48px;
+	height: 48px;
+	background: url("../images/buscar.png");
+	border:none;
+	box-shadow: none;
+	cursor:pointer;
+	float:right;
+}
+/*Cuerpo de búsqueda*/
+div#bodysearch{
+	width:319px;
+	height:100%;
+	z-index:110000;
+	background:#FFF;
+	position:fixed;
+	right:0px;
+	top:0px;
+	display:none;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+/*Añadir canciones*/
+div#divanalista{
+	position: fixed;
+	top: 50%; 
+	left: 50%;
+	width: 321px;
+	height: 241px;
+	margin-top: -120px;
+	margin-left: -160px;
+	z-index:200000;
+	background:#000;
+	display:none;
+}
+div#listaanausu{
+	float:left;
+	margin-left:1px;
+	width:319px;
+	height:190px;
+	background:#FFF;
+}
+div#listaanausuario{
+	float:left;
+	margin-left:1px;
+	width:319px;
+	height:190px;
+	background:#FFF;
+}
+/*SUB-PARTES*/
+
+/*bloque 1*/
+div#playlistas{
+	width:100%;
+	height:34px;
+	border-bottom:1px solid #CCC;
+	font-size:20px;
+}
+div#playlistasusu{
+	width:100%;
+	height:34px;
+	border-bottom:1px solid #CCC;
+	font-size:20px;
+}
+div#playlistas a{
+	cursor:pointer;
+	color:#000;
+}
+div#playlistasusu a{
+	cursor:pointer;
+	color:#000;
+}
+div#playlistastitle{
+	float:left;
+	width:260px;
+	height:23px;
+	padding-top:2px;
+	margin:5px 0px 5px 0px;
+	white-space:nowrap;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+div#playlistasmas{
+	margin:5px 10px 5px 0px;
+	float:right;
+	background: url("../images/mas-white.png");
+	width:24px;
+	height:24px;
+}
+div#nothing{
+	margin:auto;
+	margin-top:50px;
+	text-align:center;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	padding:5px;
+}
+div#logingood{
+	margin:auto;
+	margin-top:50px;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	cursor:pointer;
+	color:#000;
+	text-decoration:none;
+}
+div#logingood:hover{
+	text-decoration:underline;
+}
+
+/*bloque 2*/
+
+div#playlistasdelet{
+	margin:5px 10px 5px 0px;
+	float:right;
+	background: url("../images/trash.png");
+	width:24px;
+	height:24px;
+}
+/*bloque 3*/
+/*formulario de creacion de playlist*/
+form#crearplaylist{
+	background: #000;
+	width:319px;
+	height: 32px;
+	margin-top:5px;
+	margin:auto;
+	float:left;
+	position:relative;
+	
+}
+#crearplaylist input.textocreador {
+	background: transparent;
+	border: none;
+	width:270px;
+	color:#FFF;
+	position:absolute;
+	top:-2px;
+	left:0px;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#crearplaylist input.botoncreador {
+    width: 32px;
+	height: 32px;
+	background: url("../images/mas-black.png");
+	border:none;
+	box-shadow: none;
+	cursor:pointer;
+	float:right;
+}
+#crearplaylist input.enviaridusu1 {display:none;}
+#crearplaylist input.enviaridusu2 {display:none;}
+/*Div para cargar los playlists*/
+div#playlistdiv{
+	margin-top:0px;
+	width:314px;
+	padding:0px 0px 0px 5px;
+	height:158px;
+	background:#FFF;
+}
+div#confirmar{
+	border-radius:6px;
+	display:none;
+	background:#FC0;
+	width:150px;
+	color:#000;
+	top:100px;
+	left:75px;
+	position:absolute;
+	padding:10px;
+	z-index:500000;
+}
+div#trash{
+	background: url("../images/trash.png");
+	width:24px;
+	height:24px;
+	border:none;
+	box-shadow: none;
+	float:left;
+	margin-top:4px;
+	margin-right:30px;
+}
+div#botsi{
+	border-radius:6px;
+	background:#000;
+	background-image: url("../images/si.png");
+	width:32px;
+	height:32px;
+	cursor:pointer;
+	border:none;
+	box-shadow: none;
+	float:left;
+	margin-right:20px;
+}
+div#botno{
+	border-radius:6px;
+	background:#000;
+	background-image: url("../images/no.png");
+	width:32px;
+	height:32px;
+	cursor:pointer;
+	border:none;
+	box-shadow: none;
+	float:left;
+}
+
+/*bloque 4*/
+/*SONG*/
+div#videos_artista_lista{
+	width:255px;
+	height:98px;
+	position:relative;
+	border-radius:3px;
+	border: 1px solid #444;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#333;
+	background-image: -ms-linear-gradient(top, #222, #333);     /* IE10 */
+ 	background-image:-moz-linear-gradient(top, #222, #333);     /* Mozilla */
+ 	/* for Safari, Chrome */
+ 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(1, #333));
+ 	background-image: -o-linear-gradient(top, #222, #333);          /* Opera 11.1+ */
+ 	background: linear-gradient(top, #222, #333);          /* W3C Markup */ 
+}
+div#delete_song{
+	position:absolute;
+	top:62px;
+	left:215px;
+	background-image:url("../images/delete.png");;
+	width:32px;
+	height:32px;
+	cursor:pointer;
+}
+div#videos_artista_lista a{
+	color:#FFF;
+	cursor:pointer;
+}
+div#videos_imagen_lista{
+	position:absolute;
+	top:4px;
+	left:4px;
+	width:120px;
+	height:90px;
+}
+.showdivsin{
+	text-decoration:none;
+}
+div#videos_title_lista{
+	position:absolute;
+	top:4px;
+	left:128px;
+	white-space:normal;
+	width:120px;
+	height: 43px;
+	font-weight:bold;
+	overflow-y: hidden;
+	padding-bottom: 5px; 
+	word-wrap: break-word;
+	line-height:12px;
+}
+div#videos_title_lista:hover{
+	text-decoration:underline;
+}
+div#playvideoimagesong{
+	position:absolute;
+	top:3px;
+	left:3px;
+	z-index:150;
+	width:120px;
+	height:90px;
+	background: url("../images/fondo.png");
+}
+div#playvideoimagesong:hover{
+	border:1px solid #000;
+	background: url("../images/play-back.png");
+}
+div#maslist{
+	position:absolute;
+	top:62px;
+	left:175px;
+	background: url("../images/mas-black.png");
+	width:32px;
+	height:32px;
+	cursor:pointer;
+}
+div#botonfacebooklista{
+	position:absolute;
+	top:62px;
+	left:133px;
+	background: url("../images/face-black-white.png");
+	width:32px;
+	height:32px;
+	cursor:pointer;
+}
+/*bloque 5*/
+div#contentsearch{
+	padding-top:50px;
+	padding-bottom:50px !important;
+}
+div#searchtitle{
+	font-size:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#000;
+	padding:10px 0px 10px 5px !important;
+}
+div#searchblock{
+	position:relative;
+	margin:0px 0px 5px 5px !important;
+	float:left;
+	width:95%;
+	height:95px;
+	border-top: 1px solid #CCC;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+div#searchvideoimage{
+	position:absolute;
+	width:120px;
+	height:90px;
+	left:1px;
+	top:5px;
+}
+div#playvideoimage{
+	position:absolute;
+	width:120px;
+	height:90px;
+	left:0px;
+	top:4px;
+	background:url("../images/fondo.png");
+	
+}
+div#playvideoimage:hover{
+	border: 1px solid #000;
+	background:url("../images/play-back.png");
+}
+.showunderline{
+	text-decoration:none;
+}
+div#searchvideotitle{
+	position:absolute;
+	top:4px;
+	left:128px;
+	white-space:normal;
+	width:165px;
+	height: 43px;
+	font-weight:bold;
+	overflow-y: hidden;
+	word-wrap: break-word;
+	line-height:14px;
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+}
+div#searchvideotitle:hover{
+	text-decoration:underline !important;
+}
+div#searchvideodescription{
+	overflow-y: hidden;
+	word-wrap: break-word;
+	height:40px;
+	color:#666;
+	
+}
+div#searchfooter{
+	width:100%;
+	height:50px;
+	float:left;
+}
+div#maslistmas{
+	position:absolute;
+	top:63px;
+	left:258px;
+	background: url("../images/mas-black.png");
+	width:32px;
+	height:32px;
+	cursor:pointer;
+	 filter: alpha(opacity=20); /* internet explorer */
+    -khtml-opacity: 0.2;      /* khtml, version anterior de safari */
+    -moz-opacity: 0.2;       /* firefox, mozilla, netscape */
+    opacity: 0.2;           /* safari, chrome, opera */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; /*internet explorer 8  */
+}
+div#maslistmas:hover{
+	 filter: alpha(opacity=100); /* internet explorer */
+    -khtml-opacity: 1;      /* khtml, version anterior de safari */
+    -moz-opacity: 1;       /* firefox, mozilla, netscape */
+    opacity: 1;           /* safari, chrome, opera */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /*internet explorer 8  */
+}
+div#botonfacebook{
+	position:absolute;
+	top:63px;
+	left:215px;
+	background: url("../images/face-black.png");
+	width:32px;
+	height:32px;
+	cursor:pointer;
+	 filter: alpha(opacity=20); /* internet explorer */
+    -khtml-opacity: 0.2;      /* khtml, version anterior de safari */
+    -moz-opacity: 0.2;       /* firefox, mozilla, netscape */
+    opacity: 0.2;           /* safari, chrome, opera */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; /*internet explorer 8  */
+}
+div#botonfacebook:hover{
+	 filter: alpha(opacity=100); /* internet explorer */
+    -khtml-opacity: 1;      /* khtml, version anterior de safari */
+    -moz-opacity: 1;       /* firefox, mozilla, netscape */
+    opacity: 1;           /* safari, chrome, opera */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /*internet explorer 8  */
+}
+
+@media only screen and (max-width:480px) {
+	div#sharetwitter, div#sharegoogle, div#shareface{
+		display:none;
+	}	
+}
